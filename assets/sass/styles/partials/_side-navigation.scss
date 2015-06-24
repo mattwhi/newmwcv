@@ -1,0 +1,20 @@
+ul.side-navigation {
+	position: fixed;
+	right:20px;
+	top:50%;
+	margin-top: -25px;
+	li {
+		a {
+		border-radius: 50%;
+		background-color: #ccc;
+		height:20px;
+		width:20px;
+		display: block;
+		border:3px solid #fff;
+		&:hover {
+			background-color: #fff;
+			border:3px solid #921515;
+			}
+		}
+	}
+}
