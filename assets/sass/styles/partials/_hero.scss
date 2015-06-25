@@ -1,1 +1,8 @@
-// 
+#hero {
+	&.parent{
+		background-image:url('../images/moutain-background.jpg');
+		background-position:fixed;
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+}

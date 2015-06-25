@@ -4,6 +4,8 @@ ul.side-navigation {
 	top:50%;
 	margin-top: -25px;
 	li {
+		list-style: none;
+		margin:10px 0;
 		a {
 		border-radius: 50%;
 		background-color: #ccc;
@@ -11,9 +13,9 @@ ul.side-navigation {
 		width:20px;
 		display: block;
 		border:3px solid #fff;
-		&:hover {
-			background-color: #fff;
+		&.active {
 			border:3px solid #921515;
+			background-color:#fff;
 			}
 		}
 	}
