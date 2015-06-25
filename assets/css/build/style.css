@@ -7781,7 +7781,6 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  overflow-y: hidden;
 }
 
 .wrapper {
@@ -7804,7 +7803,7 @@ html, body {
   padding: 10px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .wrapper {
     width: 750px;
   }
@@ -7824,7 +7823,7 @@ html, body {
     width: 20%;
   }
 }
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 768px) {
   .wrapper {
     width: 970px;
   }
@@ -7833,51 +7832,17 @@ html, body {
     display: inline-block;
   }
 }
-@media screen and (min-width: 1225px) {
+@media screen and (min-width: 1200px) {
   .wrapper {
     width: 1170px;
   }
 }
-.parent {
+.cover {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
   position: relative;
   padding: 20px;
-}
-.parent::after {
-  clear: both;
-}
-.parent .col-md-12 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100px;
-  margin-left: -50%;
-  margin-top: -50px;
-  text-align: center;
-}
-.parent.about {
-  color: #ccc;
-}
-
-@media screen and (min-width: 1225px) {
-  .container .col-md-12.hero {
-    margin-top: -50px;
-    color: #fff;
-    text-align: center;
-  }
-}
-.module {
-  padding: 10px;
-}
-
-#hero.parent {
-  background-image: url("../images/moutain-background.jpg");
-  background-position: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 ul.side-navigation {
@@ -7901,6 +7866,59 @@ ul.side-navigation li a {
 ul.side-navigation li a.active {
   border: 3px solid #921515;
   background-color: #fff;
+}
+
+.module {
+  padding: 10px;
+}
+
+#hero {
+  background-image: url("../images/st-aidens-leeds-bt-mw.jpg");
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hero .container .row .col-md-12 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100px;
+  margin-left: -50%;
+  margin-top: -50px;
+  text-align: center;
+}
+#hero .container .row .col-md-12 header {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .container .col-md-12 {
+    margin-top: -50px;
+    text-align: center;
+  }
+}
+#about {
+  background-color: #f6f6f6;
+}
+#about .container .section-header {
+  text-align: center;
+}
+#about .container .section-header h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 30px 0;
+}
+#about .container .section-header .spacer {
+  width: 150px;
+  height: 2px;
+  margin: auto;
+  background: #921515;
+}
+#about .container .section-header p {
+  padding: 30px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

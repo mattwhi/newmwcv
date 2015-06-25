@@ -1,8 +1,44 @@
 #hero {
-	&.parent{
-		background-image:url('../images/moutain-background.jpg');
-		background-position:fixed;
-		background-size:cover;
-		background-repeat:no-repeat;
+	background-image:url('../images/st-aidens-leeds-bt-mw.jpg');
+	background-position:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+	.container {
+		.row {
+			.col-md-12 {
+				color:#fff;
+				position: absolute;
+				top:50%;
+				left:50%;
+				width:100%;
+				height:100px;
+				margin-left:-50%;
+				margin-top:-50px;
+				text-align: center;
+				header {
+					text-transform: uppercase;
+					letter-spacing: 3px;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $media-phone) {
+	.cover{
+	}
+}
+@media screen and (min-width: $media-tablet) {
+	.cover {
+	}
+}
+
+@media screen and (min-width: $media-desktop) {
+	#hero {
+		.container {
+			.col-md-12 {
+				margin-top:-50px;
+				text-align: center;
+			}
+		}
 	}
 }

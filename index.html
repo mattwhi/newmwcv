@@ -10,13 +10,13 @@
 <body>
 
 <!--Start of Hero section -->
-<section id="hero" class="parent">
+<section id="hero" class="cover">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 hero">
+			<div class="col-md-12">
 				<header>
-				<h1>Matthew White</h1>
-				<h2>Front End Developer</h2>
+					<h1>Matthew White</h1>
+					<h2>Front End Developer</h2>
 				</header>
 			</div>
 		</div>
@@ -24,20 +24,33 @@
 </section>
 
 <!-- Start of Second Section About Me -->
-<section id="about" class="parent about">
+<section id="about" class="cover">
 	<div class="container">
+		<header class="section-header">
+			<h2>Profile</h2>
+			<div class="spacer"></div>
+			<p>Hello i'm Matt White with a passion for Web Development</p>
+		</header>
 		<div class="row">
-			<div class="col-md-12">
-				<header>
-					<h2>profile</h2>
-				</header>
+			<div class="col-md-3">
+				<img src="assets/images/profile-picture.jpg" width="225px" height="225px">
+			</div>
+			<div class="col-md-9">
+				<p>For the past 5 years I have worked within the telecommunications industry as a front end website developer, over the past years I have been challenged to implement new features to one of the most popular telecommunications websites in the UK.</p>
+				<p>Having a high passion and drive to succeed has been my driving force to achieve my goals, in both my technology skills, also my communication skills at all levels.</p>
+				<p>My role has involved not only front end development work but the ability to communicate with but least, fellow developers, designers, product managers and program managers.</p>
+				<p>Ever challenged to build my skills, I have become proficient in HTML and CSS this includes HTML5 &amp; CSS3.</p>
+				<p>Other major areas of my development career has included the use of Apache Velocity, Git, jQuery and Javascript, node.js, grunt, npm</p>
+				<p>Apart from my work requirements, website development is my hobby, with a strong interest of Twitter Bootstrap, WordPress, Responsive Web Design, plus many more website oriantated tools.</p>
+				<p>I have experience in Adobe Creative Suites, Tortoise SVN, CMS Systems Including WordPress, Magento, OpenCart</p>
+
 			</div>
 		</div>
-	</div>	
+	</div>
 </section>
 
 <!-- Start of Second Section About Me -->
-<section id="about" class="parent contact">
+<section id="contact" class="cover">
 	<div class="wrapper">
 		<div class="row">
 			<div class="col-2">
@@ -67,6 +80,7 @@
 	<script type="text/javascript" src="assets/js/main.min.js"></script>
 
 	<script>
+
         $(function() {
             $.scrollify({
                 section : "section",

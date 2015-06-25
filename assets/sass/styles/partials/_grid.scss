@@ -15,7 +15,7 @@
 	width:100%;
 	padding:10px;
 		}
-@media screen and (min-width: 320px) {
+@media screen and (min-width: $media-phone) {
 	.wrapper {
 		width:750px;
 		.col-1 {
@@ -35,7 +35,7 @@
 		}
 	}
 }
-@media screen and (min-width: 575px) {
+@media screen and (min-width: $media-tablet) {
 	.wrapper {
 		width:970px;
 		.col-1, .col-2, .col-3, .col-4, .col-5 {
@@ -44,7 +44,7 @@
 		}
 	}
 }
-@media screen and (min-width: 1225px) {
+@media screen and (min-width: $media-desktop) {
 	.wrapper {
 		width:1170px;
 	}
