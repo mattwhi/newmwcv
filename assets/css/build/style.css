@@ -7780,7 +7780,7 @@ button.close {
 html, body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .wrapper {
@@ -7839,17 +7839,23 @@ html, body {
 }
 .cover {
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100%;
   position: relative;
   padding: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .cover {
+    width: 100%;
+    height: 100vh;
+  }
+}
 ul.side-navigation {
   position: fixed;
   right: 20px;
   top: 50%;
   margin-top: -25px;
+  z-index: 999;
 }
 ul.side-navigation li {
   list-style: none;
@@ -7877,6 +7883,17 @@ ul.side-navigation li a.active {
   background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 1;
+}
+#hero .overlay {
+  background-image: url("../images/bg_pattern.png");
+  position: absolute;
+  opacity: 1;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 #hero .container .row .col-md-12 {
   color: #fff;
@@ -7892,6 +7909,7 @@ ul.side-navigation li a.active {
 #hero .container .row .col-md-12 header {
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (min-width: 1200px) {
@@ -7919,6 +7937,113 @@ ul.side-navigation li a.active {
 }
 #about .container .section-header p {
   padding: 30px 0;
+}
+
+#skills .container .row .skill-charts .progress-radial {
+  float: left;
+  margin-right: 30px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #fff;
+}
+#skills .container .row .skill-charts .progress-radial .overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+}
+#skills .container .row .skill-charts .progress-0 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(0deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(90deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-5 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(342deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(108deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-10 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(324deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(126deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-15 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(306deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(144deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-20 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(288deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(162deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-25 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-30 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(252deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(198deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-35 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(234deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(216deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-40 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(216deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(234deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-45 {
+  background-image: -webkit-linear-gradient(0deg, #2f3439 50%, transparent 50%, transparent), -webkit-linear-gradient(198deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #2f3439 50%, transparent 50%, transparent), linear-gradient(252deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-50 {
+  background-image: -webkit-linear-gradient(180deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(-90deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-55 {
+  background-image: -webkit-linear-gradient(162deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(-72deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-60 {
+  background-image: -webkit-linear-gradient(144deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(-54deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-65 {
+  background-image: -webkit-linear-gradient(126deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(-36deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-70 {
+  background-image: -webkit-linear-gradient(108deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(-18deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-75 {
+  background-image: -webkit-linear-gradient(90deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(0deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-80 {
+  background-image: -webkit-linear-gradient(72deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(18deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-85 {
+  background-image: -webkit-linear-gradient(54deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(36deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-90 {
+  background-image: -webkit-linear-gradient(36deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(54deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-95 {
+  background-image: -webkit-linear-gradient(18deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(72deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
+}
+#skills .container .row .skill-charts .progress-100 {
+  background-image: -webkit-linear-gradient(0deg, #ff6347 50%, transparent 50%, transparent), -webkit-linear-gradient(180deg, #ff6347 50%, #2f3439 50%, #2f3439);
+  background-image: linear-gradient(90deg, #ff6347 50%, transparent 50%, transparent), linear-gradient(270deg, #ff6347 50%, #2f3439 50%, #2f3439);
 }
 
 /*# sourceMappingURL=style.css.map */
