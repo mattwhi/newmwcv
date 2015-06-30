@@ -16,16 +16,16 @@ jQuery(document).ready(function($) {
 	//************************************************************************************//
 	//Dynamically add class'active' to first li in navigation
 	//************************************************************************************//
-	$('.side-navigation li:nth-child(1) a').addClass('active');
+	// $('.side-navigation li:nth-child(1) a').addClass('active');
 	//************************************************************************************//
 	//Scrolls to section corresponding with the index of the link
 	//************************************************************************************//
-	$('.side-navigation li a').click(function(){
-			var index = $('.side-navigation li a').index(this);
-			$('.side-navigation li a').removeClass('active');
-			$(this).addClass('active');
-			$('html, body').animate({scrollTop: $('.section' + (index)).offset().top},800,'easeOutExpo')
-		});
+	// $('.side-navigation li a').click(function(){
+	// 		var index = $('.side-navigation li a').index(this);
+	// 		$('.side-navigation li a').removeClass('active');
+	// 		$(this).addClass('active');
+	// 		$('html, body').animate({scrollTop: $('.section' + (index)).offset().top},800,'easeOutExpo')
+	// 	});
 	//************************************************************************************//
 	//End
 	//************************************************************************************//

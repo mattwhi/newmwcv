@@ -12,3 +12,20 @@ html, body {
 		margin:0;
 		font-family: 'Roboto', sans-serif !important;
 }
+.clear:after {
+	content: " ";
+	display: table;
+	clear:both;
+}
+.clear {
+	zoom:1;
+}
+@media (max-width: $media-phone) {
+
+}
+@media (min-width: $media-small-tablet) and (max-width: $media-large-tablet) {
+
+}
+@media (min-width: $media-desktop) {
+
+}

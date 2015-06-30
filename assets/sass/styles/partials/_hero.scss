@@ -35,22 +35,3 @@
 		}
 	}
 }
-@media screen and (min-width: $media-phone) {
-	.cover{
-	}
-}
-@media screen and (min-width: $media-tablet) {
-	.cover {
-	}
-}
-
-@media screen and (min-width: $media-desktop) {
-	#hero {
-		.container {
-			.col-md-12 {
-				margin-top:-50px;
-				text-align: center;
-			}
-		}
-	}
-}

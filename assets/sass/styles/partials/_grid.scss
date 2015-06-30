@@ -1,51 +1,41 @@
-.wrapper {
-		margin:0 auto;
-		padding:0 15px;
-		width:100%;
-}
-.row {
+.grid {
 	margin:0 -15px;
-	&::after {
-		content: "";
-	    display: table;
-	    clear:both;
-	}
 }
-.col-1, .col-2, .col-3, .col-4, .col-5 {
+.grid-row {
+	padding:5px 0;
+	margin:5px 0;
+}
+.col-12, .col-8, .col-6, .col-4, .col-2, .col-1  {
 	width:100%;
-	padding:10px;
-		}
-@media screen and (min-width: $media-phone) {
-	.wrapper {
-		width:750px;
-		.col-1 {
-			width:100%;
-		}
-		.col-2 {
-			width:50%;
-		}
-		.col-3 {
-			width:33.3%;
-		}
-		.col-4 {
-			width:25%;
-		}
-		.col-5 {
-			width:20%;
-		}
+	margin:5px 0;
+	padding:5px 0;
 	}
+
+@media (min-width: $media-small-tablet) and (max-width: $media-large-tablet) {
+
 }
-@media screen and (min-width: $media-tablet) {
-	.wrapper {
-		width:970px;
-		.col-1, .col-2, .col-3, .col-4, .col-5 {
-		float: left;
-		display: inline-block;
-		}
+
+@media (min-width: $media-desktop) {
+.col-12, .col-8, .col-6, .col-4, .col-2, .col-1  {
+	float:left;
 	}
-}
-@media screen and (min-width: $media-desktop) {
-	.wrapper {
-		width:1170px;
+.col-8 {
+	width:66.6667%
+	}
+
+.col-6 {
+	width:50%;
+	}
+
+.col-4 {
+	width:33.333%;
+	}
+
+.col-2 {
+	width:16.6665%
+	} 
+
+.col-1 {
+	width: 8.33333%
 	}
 }
