@@ -15,10 +15,24 @@
 <body>
 
 <!--Start of Hero section -->
+<nav class="navigation">
+	<div class="container">
+		<div class="logo">
+			<img src="assets/images/matthew-white-logo.png">
+		</div>
+		<ul>
+			<li><a href="#hero">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#Experience">Experience</a></li>
+		</ul>
+	</div>	
+</nav>
 <section id="hero" class="cover">
 <div class="overlay"></div>
 		<div class="container clear">
 			<header>
+				<img src="assets/images/matthew-white-logo.png">
 				<h1>Matthew White</h1>
 				<h2>Front End Developer</h2>
 			</header>
@@ -37,21 +51,21 @@
 			<div class="col-4 center">
 				<img class="img-thumb" src="assets/images/profile-picture.jpg" width="225px" height="225px">
 			</div>
-			<div class="col-8 copy">
+			<div class="col-6 pull-right copy">
 				<p>For the past 5 years I have worked within the telecommunications industry as a front end website developer, over the past years I have been challenged to implement new features to one of the most popular telecommunications websites in the UK.</p>
 				<p>Having a high passion and drive to succeed has been my driving force to achieve my goals, in both my technology skills, also my communication skills at all levels.</p>
-				<p>My role has involved not only front end development work but the ability to communicate with but least, fellow developers, designers, product managers and program managers.</p>
+				<!-- <p>My role has involved not only front end development work but the ability to communicate with but least, fellow developers, designers, product managers and program managers.</p>
 				<p>Ever challenged to build my skills, I have become proficient in HTML and CSS this includes HTML5 &amp; CSS3.</p>
 				<p>Other major areas of my development career has included the use of Apache Velocity, Git, jQuery and Javascript, node.js, grunt, npm</p>
 				<p>Apart from my work requirements, website development is my hobby, with a strong interest of Twitter Bootstrap, WordPress, Responsive Web Design, plus many more website oriantated tools.</p>
-				<p>I have experience in Adobe Creative Suites, Tortoise SVN, CMS Systems Including WordPress, Magento, OpenCart</p>
+				<p>I have experience in Adobe Creative Suites, Tortoise SVN, CMS Systems Including WordPress, Magento, OpenCart</p> -->
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Start of Second Section About Me -->
-<section id="about">
+<section id="skills">
 	<div class="container">
 		<header class="section-header">
 			<h2>Skills</h2>
@@ -64,7 +78,11 @@
 				<div class="module-medium">
 					<i class="fa fa-html5"></i>
 					<h3>HTML</h3>
-					<p>HTML</p>	
+					<div class="chartbox">
+				<div class="chart" data-percent="73">
+				<span class="percent">84</span>
+				</div>
+				</div>	
 				</div>
 			</div>
 		</div>
@@ -73,7 +91,11 @@
 				<div class="module-medium">
 					<i class="fa fa-css3"></i>
 					<h3>CSS3</h3>
-					<p>CSS3</p>	
+					<div class="chartbox">
+				<div class="chart" data-percent="73">
+				<span class="percent">73</span>
+				</div>
+				</div>	
 				</div>
 			</div>
 		</div>
@@ -82,7 +104,11 @@
 			<div class="module-medium">
 			<i class="fa fa-git"></i>
 				<h3>Git</h3>
-				<p>Git</p>	
+				<div class="chartbox">
+				<div class="chart" data-percent="73">
+				<span class="percent">90</span>
+				</div>
+				</div>		
 			</div>
 			</div>
 		</div>
@@ -93,7 +119,11 @@
 				<div class="module-medium">
 					<i class="fa fa-html5"></i>
 					<h3>HTML</h3>
-					<p>HTML</p>	
+					<div class="chartbox">
+				<div class="chart" data-percent="73">
+				<span class="percent">73</span>
+				</div>
+				</div>	
 				</div>
 			</div>
 		</div>
@@ -102,7 +132,11 @@
 				<div class="module-medium">
 					<i class="fa fa-css3"></i>
 					<h3>CSS3</h3>
-					<p>CSS3</p>	
+					<div class="chartbox">
+				<div class="chart" data-percent="73">
+				<span class="percent">73</span>
+				</div>
+				</div>		
 				</div>
 			</div>
 		</div>
@@ -111,7 +145,11 @@
 			<div class="module-medium">
 			<i class="fa fa-git"></i>
 				<h3>Git</h3>
-				<p>Git</p>	
+				<div class="chartbox">
+				<div class="chart" data-percent="73">
+				<span class="percent">73</span>
+				</div>
+				</div>	
 			</div>
 			</div>
 		</div>
@@ -124,6 +162,7 @@
 			<h2>Skills</h2>
 			<div class="spacer"></div>
 			<p>Here is a little bit about my skills</p>
+
 		</header>
 	</div>
 </section>
@@ -139,6 +178,8 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/scrollyfy.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easypiechart.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.min.js"></script>
 	<script>
 
@@ -148,5 +189,29 @@
         //     });
         // });
     </script>
+    <script>
+    $(function() {
+        $('.chart').easyPieChart({
+            barColor:'#921515',
+            trackColor:'#fff',
+            scaleColor: false,
+            easing:"easeInOut",
+            lineWidth: "5"
+        });
+    });
+</script>
+<script type="text/javascript">
+		$(document).ready(function() {  
+        $("html").niceScroll();
+    });
+	/* scrolltop */
+  $('.navigation li a, .menus').on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
+</script>
 </body>
 </html>

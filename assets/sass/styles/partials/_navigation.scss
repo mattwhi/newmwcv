@@ -1,0 +1,41 @@
+nav.navigation {
+	height:100px;
+	position:fixed;
+	top:0;
+	z-index:10000000;
+	width:100%;
+	padding:70px 0 0 0;
+	.logo {
+		background-color: transparent;
+		color:#666;
+		position:absolute;
+		top:-40px;
+		border-radius: 0 0 5px 5px;
+		height:50px;
+		padding:75px 30px 65px;
+		span a {
+			text-decoration:none;
+			color:#666;
+			font-size: 30px;
+			padding:20px;
+			font-family: $main-font;
+		}
+		img {
+			width:50px;
+		}
+	}
+	ul {
+		display:block;
+		float: right;
+		margin-left:-15px;
+	}
+	li {
+		float:left;
+	}
+	li a {
+		color:#fff;
+		text-decoration:none;
+		padding:10px;
+		text-transform: uppercase;
+	}
+}

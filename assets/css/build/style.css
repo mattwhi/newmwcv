@@ -2871,6 +2871,14 @@ html, body {
   zoom: 1;
 }
 
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
 .grid {
   margin: 0 -15px;
 }
@@ -2911,6 +2919,29 @@ html, body {
     width: 8.33333%;
   }
 }
+section {
+  padding: 50px 0;
+  margin-bottom: 5px;
+  background-color: #f6f6f6;
+}
+section .container .section-header {
+  text-align: center;
+}
+section .container .section-header h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 30px 0;
+}
+section .container .section-header .spacer {
+  width: 150px;
+  height: 2px;
+  margin: auto;
+  background: #921515;
+}
+section .container .section-header p {
+  padding: 30px 0;
+}
+
 .cover {
   width: 100%;
   height: 100%;
@@ -2966,6 +2997,48 @@ html, body {
     font-size: 16px;
   }
 }
+nav.navigation {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 10000000;
+  width: 100%;
+  padding: 70px 0 0 0;
+}
+nav.navigation .logo {
+  background-color: transparent;
+  color: #666;
+  position: absolute;
+  top: -40px;
+  border-radius: 0 0 5px 5px;
+  height: 50px;
+  padding: 75px 30px 65px;
+}
+nav.navigation .logo span a {
+  text-decoration: none;
+  color: #666;
+  font-size: 30px;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+nav.navigation .logo img {
+  width: 50px;
+}
+nav.navigation ul {
+  display: block;
+  float: right;
+  margin-left: -15px;
+}
+nav.navigation li {
+  float: left;
+}
+nav.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
 ul.side-navigation {
   position: fixed;
   right: 20px;
@@ -3019,7 +3092,7 @@ ul.side-navigation li a.active {
 }
 
 #hero {
-  background-image: url("../images/st-aidens-leeds-bt-mw.jpg");
+  background-image: url("../images/background.jpg");
   background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3035,26 +3108,21 @@ ul.side-navigation li a.active {
   height: 100%;
   z-index: -1;
 }
-#hero .container .row .col-md-12 {
+#hero .container header {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
-  height: 100px;
+  height: 200px;
   margin-left: -50%;
-  margin-top: -50px;
+  margin-top: -100px;
   text-align: center;
 }
-#hero .container .row .col-md-12 header {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-family: "Roboto", sans-serif;
-}
 
-#about {
-  background-color: #f6f6f6;
-}
 #about .container .section-header {
   text-align: center;
 }
@@ -3071,6 +3139,47 @@ ul.side-navigation li a.active {
 }
 #about .container .section-header p {
   padding: 30px 0;
+}
+
+.chartbox {
+  margin-bottom: 40px;
+}
+.chartbox .chart {
+  position: relative;
+  display: block;
+  width: 110px;
+  height: 110px;
+  margin: 40px auto 10px;
+  text-align: center;
+}
+.chartbox .chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chartbox .chart-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+}
+.chartbox .percent {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 110px;
+  font-weight: 400;
+  color: #921515;
+  z-index: 2;
+  position: absolute;
+  left: 40px;
+}
+.chartbox .percent::after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
 }
 
 /*# sourceMappingURL=style.css.map */
