@@ -14,35 +14,45 @@
 	<meta name="author" content="Matthew White">
 </head>
 <body>
-
+<input type="checkbox" id="offcanvas" class="toggle" />
 <!--Start of Hero section -->
-<nav class="navigation">
-	<div class="container">
-		<div class="logo">
-			<img src="assets/images/matthew-white-logo.png">
-		</div>
-		<ul>
-			<li><a href="#hero">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#Experience">Experience</a></li>
-		</ul>
-	</div>	
-</nav>
-<section id="hero" class="cover">
+<div class="wrapper">
+	<aside>
+		<nav>
+			<img src="assets/images/matthew-white-logo.png" />
+			<h2 class="name-badge">Matthew White | Front End Developer</h2>
+				<ul class="navigation">
+					<li><a href="#hero">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experience</a></li>
+				</ul>
+				<ul class="social">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+			<span class="copyright">&copy; 2015 Matthew White. All Rights Reserved</span>
+		</nav>
+	</aside>
+<section>
+<label for="offcanvas" class="biglabel"></label>
+<label for="offcanvas" class="toggler">
+	<span class="navicon"></span>
+</label>
+<div id="hero" class="container cover">
 <div class="overlay"></div>
-		<div class="container clear">
-			<header>
-				<img src="assets/images/matthew-white-logo.png">
-				<h1>Matthew White</h1>
-				<h2>Front End Developer</h2>
-			</header>
-		</div>
-</section>
-
+	<header>
+		<img src="assets/images/matthew-white-logo.png">
+		<h1>Matthew White</h1>
+		<h2>Front End Developer</h2>
+		<label for="offcanvas" class="btn button-standard">Meet Me</label>
+	</header>
+</div>
 <!-- Start of Second Section About Me -->
-<section id="about">
-	<div class="container">
+<div id="about" class="container">
+<div class="content">
 		<header class="section-header">
 			<h2>Profile</h2>
 			<div class="spacer"></div>
@@ -55,141 +65,120 @@
 			<div class="col-6 pull-right copy">
 				<p>For the past 5 years I have worked within the telecommunications industry as a front end website developer, over the past years I have been challenged to implement new features to one of the most popular telecommunications websites in the UK.</p>
 				<p>Having a high passion and drive to succeed has been my driving force to achieve my goals, in both my technology skills, also my communication skills at all levels.</p>
-				<!-- <p>My role has involved not only front end development work but the ability to communicate with but least, fellow developers, designers, product managers and program managers.</p>
-				<p>Ever challenged to build my skills, I have become proficient in HTML and CSS this includes HTML5 &amp; CSS3.</p>
-				<p>Other major areas of my development career has included the use of Apache Velocity, Git, jQuery and Javascript, node.js, grunt, npm</p>
-				<p>Apart from my work requirements, website development is my hobby, with a strong interest of Twitter Bootstrap, WordPress, Responsive Web Design, plus many more website oriantated tools.</p>
-				<p>I have experience in Adobe Creative Suites, Tortoise SVN, CMS Systems Including WordPress, Magento, OpenCart</p> -->
 			</div>
 		</div>
 	</div>
-</section>
-
+</div>
 <!-- Start of Second Section About Me -->
-<section id="skills">
-	<div class="container">
-		<header class="section-header">
-			<h2>Skills</h2>
-			<div class="spacer"></div>
-			<p>Here is a little bit about my skills</p>
-		</header>
-		<div class="grid grid-row clear">
-		<div class="col-4">
-		<div class="module">
-				<div class="module-medium">
-					<i class="fa fa-html5"></i>
-					<h3>HTML</h3>
-					<div class="chartbox">
-				<div class="chart" data-percent="73">
-				<span class="percent">84</span>
-				</div>
-				</div>	
-				</div>
-			</div>
-		</div>
-		<div class="col-4">
-		<div class="module">
-				<div class="module-medium">
-					<i class="fa fa-css3"></i>
-					<h3>CSS3</h3>
-					<div class="chartbox">
-				<div class="chart" data-percent="73">
-				<span class="percent">73</span>
-				</div>
-				</div>	
-				</div>
-			</div>
-		</div>
-		<div class="col-4">
+<div id="skills" class="container">
+	<div class="content">
+			<header class="section-header">
+				<h2>Skills</h2>
+				<div class="spacer"></div>
+				<p>Here is a little bit about my skills</p>
+			</header>
+			<div class="grid grid-row clear">
+			<div class="col-4">
 			<div class="module">
-			<div class="module-medium">
-			<i class="fa fa-git"></i>
-				<h3>Git</h3>
-				<div class="chartbox">
-				<div class="chart" data-percent="73">
-				<span class="percent">90</span>
-				</div>
-				</div>		
-			</div>
-			</div>
-		</div>
-		</div>
-		<div class="grid grid-row clear">
-		<div class="col-4">
-		<div class="module">
-				<div class="module-medium">
-					<i class="fa fa-html5"></i>
-					<h3>HTML</h3>
-					<div class="chartbox">
-				<div class="chart" data-percent="73">
-				<span class="percent">73</span>
-				</div>
-				</div>	
+					<div class="module-medium">
+						<i class="fa fa-html5"></i>
+						<h3>HTML</h3>
+						<div class="chartbox">
+					<div class="chart" data-percent="73">
+					<span class="percent">84</span>
+					</div>
+					</div>	
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-4">
-		<div class="module">
-				<div class="module-medium">
-					<i class="fa fa-css3"></i>
-					<h3>CSS3</h3>
-					<div class="chartbox">
-				<div class="chart" data-percent="73">
-				<span class="percent">73</span>
-				</div>
-				</div>		
-				</div>
-			</div>
-		</div>
-		<div class="col-4">
+			<div class="col-4">
 			<div class="module">
-			<div class="module-medium">
-			<i class="fa fa-git"></i>
-				<h3>Git</h3>
-				<div class="chartbox">
-				<div class="chart" data-percent="73">
-				<span class="percent">73</span>
+					<div class="module-medium">
+						<i class="fa fa-css3"></i>
+						<h3>CSS3</h3>
+						<div class="chartbox">
+					<div class="chart" data-percent="73">
+					<span class="percent">73</span>
+					</div>
+					</div>	
+					</div>
 				</div>
-				</div>	
+			</div>
+			<div class="col-4">
+				<div class="module">
+				<div class="module-medium">
+				<i class="fa fa-git"></i>
+					<h3>Git</h3>
+					<div class="chartbox">
+					<div class="chart" data-percent="73">
+					<span class="percent">90</span>
+					</div>
+					</div>		
+				</div>
+				</div>
 			</div>
 			</div>
-		</div>
+			<div class="grid grid-row clear">
+			<div class="col-4">
+			<div class="module">
+					<div class="module-medium">
+						<i class="fa fa-html5"></i>
+						<h3>HTML</h3>
+						<div class="chartbox">
+					<div class="chart" data-percent="73">
+					<span class="percent">73</span>
+					</div>
+					</div>	
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+			<div class="module">
+					<div class="module-medium">
+						<i class="fa fa-css3"></i>
+						<h3>CSS3</h3>
+						<div class="chartbox">
+					<div class="chart" data-percent="73">
+					<span class="percent">73</span>
+					</div>
+					</div>		
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="module">
+				<div class="module-medium">
+				<i class="fa fa-git"></i>
+					<h3>Git</h3>
+					<div class="chartbox">
+					<div class="chart" data-percent="73">
+					<span class="percent">73</span>
+					</div>
+					</div>	
+				</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</section>
-<section id="about">
-	<div class="container">
-		<header class="section-header">
-			<h2>Skills</h2>
-			<div class="spacer"></div>
-			<p>Here is a little bit about my skills</p>
-
-		</header>
+</div>
+<div id="experience" class="container">
+	<div class="content">
+			<header class="section-header">
+				<h2>Skills</h2>
+				<div class="spacer"></div>
+				<p>Here is a little bit about my skills</p>
+			</header>
+		</div>
 	</div>
-</section>
-<!-- Side navigation -->
-<!-- <ul class="side-navigation">
-
-</ul> -->
-
+</div>
 <!--JavaScript calls at footer to increase page load time -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/scrollyfy.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.easypiechart.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.min.js"></script>
-	<script>
-
-        // $(function() {
-        //     $.scrollify({
-        //         section : "section",
-        //     });
-        // });
-    </script>
     <script>
     $(function() {
         $('.chart').easyPieChart({
@@ -206,7 +195,7 @@
         $("html").niceScroll();
     });
 	/* scrolltop */
-  $('.navigation li a, .menus').on('click', function(event) {
+  $('aside li a, .menus').on('click', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top
@@ -214,5 +203,7 @@
     event.preventDefault();
   });
 </script>
+</section>
+</div>
 </body>
 </html>
