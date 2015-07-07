@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/matthew-white-logo.png" />
 	<title>Front End Developer | Matthew White | Leeds, West Yorkshire</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
 	<meta name="description" content="Front end developer located in Leeds with a range of skills including HTML, CSS, jQuery, RWD">
 	<meta name="keywords" content="developer, html developer Leeds, CSS developer Leeds, Bootstrap Developer Leeds, RWD Developer Leeds">
@@ -15,7 +16,7 @@
 </head>
 <body>
 <input type="checkbox" id="offcanvas" class="toggle" />
-<!--Start of Hero section -->
+<!--Start of side navigation -->
 <div class="wrapper">
 	<aside>
 		<nav>
@@ -41,9 +42,9 @@
 <label for="offcanvas" class="toggler">
 	<span class="navicon"></span>
 </label>
-<div id="hero" class="container cover">
+<div id="hero" class="section cover">
 <div class="overlay"></div>
-	<header>
+	<header class="wow bounceInDown" style="visibility: hidden;">
 		<img src="assets/images/matthew-white-logo.png">
 		<h1>Matthew White</h1>
 		<h2>Front End Developer</h2>
@@ -51,34 +52,38 @@
 	</header>
 </div>
 <!-- Start of Second Section About Me -->
-<div id="about" class="container">
-<div class="content">
+<div id="about" class="section wow slideInLeft" style="visibility: hidden;">
+<div class="container">
+	<div class="row">
+	<div class="col-md-12">
 		<header class="section-header">
 			<h2>Profile</h2>
 			<div class="spacer"></div>
 			<p>Hello i'm Matt White with a passion for Web Development</p>
 		</header>
+		</div>
 		<div class="grid grid-row clear">
-			<div class="col-4 center">
+			<!-- <div class="col-4 center">
 				<img class="img-thumb" src="assets/images/profile-picture.jpg" width="225px" height="225px">
-			</div>
-			<div class="col-6 pull-right copy">
+			</div> -->
+			<div class="col-md-12 copy text-center">
 				<p>For the past 5 years I have worked within the telecommunications industry as a front end website developer, over the past years I have been challenged to implement new features to one of the most popular telecommunications websites in the UK.</p>
 				<p>Having a high passion and drive to succeed has been my driving force to achieve my goals, in both my technology skills, also my communication skills at all levels.</p>
 			</div>
 		</div>
 	</div>
 </div>
+</div>
 <!-- Start of Second Section About Me -->
-<div id="skills" class="container">
-	<div class="content">
+<div id="skills" class="section">
+	<div class="container">
 			<header class="section-header">
 				<h2>Skills</h2>
 				<div class="spacer"></div>
 				<p>Here is a little bit about my skills</p>
 			</header>
 			<div class="grid grid-row clear">
-			<div class="col-4">
+			<div class="col-md-4 col-sm-6 wow bounceInLeft animated" style="visibility: hidden;">
 			<div class="module">
 					<div class="module-medium">
 						<i class="fa fa-html5"></i>
@@ -91,7 +96,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-md-4 col-sm-6 wow bounceInUp animated" style="visibility: hidden;">
 			<div class="module">
 					<div class="module-medium">
 						<i class="fa fa-css3"></i>
@@ -104,7 +109,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-4">
+			<div class="col-md-4 col-sm-6 wow slideInRight" style="visibility: hidden;">
 				<div class="module">
 				<div class="module-medium">
 				<i class="fa fa-git"></i>
@@ -117,60 +122,43 @@
 				</div>
 				</div>
 			</div>
-			</div>
-			<div class="grid grid-row clear">
-			<div class="col-4">
-			<div class="module">
-					<div class="module-medium">
-						<i class="fa fa-html5"></i>
-						<h3>HTML</h3>
-						<div class="chartbox">
-					<div class="chart" data-percent="73">
-					<span class="percent">73</span>
-					</div>
-					</div>	
-					</div>
+		</div>
+	</div>
+</div>
+<div id="experience" class="section">
+	<div class="container">
+		<div class="row">
+				<div class="col-md-12">
+					<header class="section-header">
+						<h2>Experience</h2>
+						<div class="spacer"></div>
+						<p>Here is a little bit about what I have been up to</p>
+					</header>
 				</div>
-			</div>
-			<div class="col-4">
-			<div class="module">
-					<div class="module-medium">
-						<i class="fa fa-css3"></i>
-						<h3>CSS3</h3>
-						<div class="chartbox">
-					<div class="chart" data-percent="73">
-					<span class="percent">73</span>
-					</div>
-					</div>		
-					</div>
+				<div class="col-md-3">
+					<h2>Experience</h2>
 				</div>
-			</div>
-			<div class="col-4">
-				<div class="module">
-				<div class="module-medium">
-				<i class="fa fa-git"></i>
-					<h3>Git</h3>
-					<div class="chartbox">
-					<div class="chart" data-percent="73">
-					<span class="percent">73</span>
-					</div>
-					</div>	
+				<div class="col-md-6 col-sm-8 wow bounceInUp animated">
+					<h4>eCommerce Front End Developer / Content Editor</h4>
+					<p>Front end developer for the company eCommerce website.  Working in an Agile environment, responsible for the day to day changes to constant change and marketing strategies of the business needs.  Using HTML / CSS / XSLT / Tortoise SVN.</p>
+					<hr class="hidden-xs">
 				</div>
+				<div class="col-md-3 col-sm-4">
+					<h4><i class="fa fa-suitcase"></i> Telefonica UK Ltd</h4>
+					<p><i class="fa fa-calendar"></i> 2010 - 2011</p>
+				</div>
+				<div class="col-md-6 col-md-offset-3 col-sm-8 wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp; -webkit-animation-name: bounceInUp;">
+						<h4>Front End Developer</h4>
+						<p>Front end developer for Cognizant UK Ltd working on the O2 Portal website, Working in an Agile environment, responsible for the development of new pages and features using Apache Velocity / HTML / SASS / Git / jQuery and Javascript.</p>
+						<hr class="hidden-xs">
+					</div>
+					<div class="col-md-3 col-sm-4">
+					<h4><i class="fa fa-suitcase"></i> Cognizant UK Ltd</h4>
+					<p><i class="fa fa-calendar"></i> 2010 - Present</p>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div id="experience" class="container">
-	<div class="content">
-			<header class="section-header">
-				<h2>Skills</h2>
-				<div class="spacer"></div>
-				<p>Here is a little bit about my skills</p>
-			</header>
-		</div>
-	</div>
-</div>
 <!--JavaScript calls at footer to increase page load time -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -178,6 +166,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.easypiechart.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="assets/js/wow.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.min.js"></script>
     <script>
     $(function() {
@@ -202,8 +191,28 @@
     }, 1500, 'easeInOutExpo');
     event.preventDefault();
   });
+  wow = new WOW(
+    {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       true,       // default
+      live:         true        // default
+    }
+  )
+  wow.init();
 </script>
 </section>
 </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57259112-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

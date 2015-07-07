@@ -6,6 +6,7 @@
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	@include transition(all, 0.2s, ease-in-out);
+	font-family: $main-font;
 }
 html, body {
 		padding:0;
