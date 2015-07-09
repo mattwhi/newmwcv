@@ -23,7 +23,7 @@
 
 <?php include 'fragments/footer.php' ?>
 
-<!-- Javascript goes here too -->
+<!-- Javascript goes here -->
 	<script	type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
