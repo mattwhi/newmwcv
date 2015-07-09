@@ -29,4 +29,76 @@ jQuery(document).ready(function($) {
 	//************************************************************************************//
 	//End
 	//************************************************************************************//
+	$('.nav li a, .home a, .scroll a').on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+	  });
+	$(document).ready(function() {  
+	    $("html").niceScroll();
+		});
+	$(function() {
+        $('.chart').easyPieChart({
+            barColor:'#921515',
+            trackColor:'#fff',
+            scaleColor: false,
+            easing:"easeInOut",
+            lineWidth: "5"
+        });
+    });
+    $(function() {
+    	var nav = $('nav');
+		var scrolled = false;
+		var target = $('nav').offset().top;
+
+		$(window).scroll(function () {
+
+	    if ($(window).scrollTop() >= target) {
+	        nav.addClass('navbar-fixed-top');
+	        scrolled = true;
+	    }
+
+	   if ($(window).scrollTop() <= target) {
+	        nav.removeClass('navbar-fixed-top');
+	        scrolled = false;      
+	    	}
+		});
+    })
+    $(".nav a").on("click", function(){
+    $(".nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+	});
+
+});
+jQuery(document).ready(function($){
+$(window).scroll(function() {
+
+    if ($(this).scrollTop() < $('header[data-anchor="home"]').offset().top) {
+        $('nav li').removeClass('active');
+    }
+
+    if ($(this).scrollTop() >= $('header[data-anchor="home"]').offset().top) {
+        $('nav li').removeClass('active');
+        $('nav li:eq(0)').addClass('active');
+    }
+    if ($(this).scrollTop() >= $('section[data-anchor="about"]').offset().top) {
+        $('nav li').removeClass('active');
+        $('nav li:eq(1)').addClass('active');
+    }
+    if ($(this).scrollTop() >= $('section[data-anchor="skills"]').offset().top) {
+        $('nav li').removeClass('active');
+        $('nav li:eq(2)').addClass('active');
+    }
+    if ($(this).scrollTop() >= $('section[data-anchor="experience"]').offset().top) {
+        $('nav li').removeClass('active');
+        $('nav li:eq(3)').addClass('active');
+    }
+    if ($(this).scrollTop() >= $('section[data-anchor="contact"]').offset().top)-20 {
+        $('nav li').removeClass('active');
+        $('nav li:eq(4)').addClass('active');
+    }
+
+	});
 });

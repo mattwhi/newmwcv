@@ -21,6 +21,22 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+//== Colors
+//
+//## bespoke colors.
+$mwcv-grey-base: 			  #282828 !default;
+$mwcv-grey-darker:            lighten($mwcv-grey-base, 13.5%) !default;
+$mwcv-grey-dark:              lighten($mwcv-grey-base, 20%) !default;  
+$mwcv-grey:                   lighten($mwcv-grey-base, 33.5%) !default;
+$mwcv-grey-light:             lighten($mwcv-grey-base, 46.7%) !default;
+$mwcv-grey-lighter:           lighten($mwcv-grey-base, 93.5%) !default;
+
+$mwcv-red-base: 	         #D46A6A !default;
+$mwcv-red-darker:            lighten($mwcv-red-base, 13.5%) !default;
+$mwcv-red-dark:              lighten($mwcv-red-base, 20%) !default;  
+$mwcv-red:                   lighten($mwcv-red-base, 33.5%) !default;
+$mwcv-red-light:             lighten($mwcv-red-base, 46.7%) !default;
+$mwcv-red-lighter:           lighten($mwcv-red-base, 93.5%) !default;
 
 //== Scaffolding
 //
