@@ -19,7 +19,7 @@
 				    <input type="text" class="form-control" id="nameInput" placeholder="Name">
 				  </div>
 				  <div class="form-group">
-				    <label for="email">Email address</label>
+				    <label for="email">Email address Hello World</label>
 				    <input type="email" class="form-control" id="InputEmail" placeholder="Email">
 				  </div>
 				  <div class="form-group">
