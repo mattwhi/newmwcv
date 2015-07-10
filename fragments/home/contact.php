@@ -23,7 +23,7 @@
 				    <input type="email" class="form-control" id="InputEmail" placeholder="Email">
 				  </div>
 				  <div class="form-group">
-				    <label for="message">Message</label>
+				    <label for="message">Message Hello World</label>
 				    <textarea class="form-control" rows="3"></textarea>
 				  </div>
 				  <button type="submit" class="btn btn-default">Submit</button>
