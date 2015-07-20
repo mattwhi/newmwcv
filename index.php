@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Matthew White | Front End Developer | West Yorkshire | Leeds</title>
+	<meta name="description" content="Front End Web Developer">
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
 </head>

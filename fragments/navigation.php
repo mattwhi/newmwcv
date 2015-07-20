@@ -13,7 +13,7 @@
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
-		<ul class="nav navbar-nav">
+		<ul class="nav navbar-nav navbar-right">
 			<li class="active" data-scroll="home"><a href="#home">Home</a></li>
 			<li><a href="#about" data-scroll="about">About</a></li>
 			<li><a href="#skills" data-scroll="skills">Skills</a></li>

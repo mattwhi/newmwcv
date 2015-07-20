@@ -13,7 +13,7 @@
 				<p><i class="fa fa-envelope-o"></i> matthew@matthewianwhite.co.uk</p>
 			</div>
 			<div class="col-md-6 col-xs-12 wow slideInRight" style="visibility: hidden;">
-				<form>
+				<form class="formSubmit" action="" method="POST">
 				<div class="form-group">
 				    <label for="name">Name Hello World</label>
 				    <input type="text" class="form-control" id="nameInput" placeholder="Name">

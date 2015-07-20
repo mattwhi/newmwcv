@@ -5,23 +5,37 @@ html, body {
 	height:100%;
 }
 section {
-	padding:100px 0;
+	color:$mwcv-grey-dark;
+	padding:100px 0 70px 0;
 	border-bottom:1px solid #ccc;
 	.section-header {
-		font-size:3em;
 		padding:20px 0;
 		margin:10px 0;
 		}
 	.subtitle {
-		font-size: 1.5em;
 		padding:20px;
 		margin:0 0 10px 0;
 	}
 	.spacer {
 		width:200px;
 		height:2px;
-		background: #000;
+		background: $mwcv-red-darker;
 		margin:auto;
+	}
+	h2 {
+		font-family: $main-font;
+		font-weight: 700;
+		font-size: 1.6em;
+	}
+	h3 {
+		font-family: $main-font;
+		font-weight: 400;
+		font-size: 1.4em;
+	}
+	p {
+		font-family: $main-font;
+		font-weight: 400;
+		font-size: 1.2em;
 	}
 }
 
@@ -29,7 +43,7 @@ section {
 nav {
 	@include transition(all, 0.2s, ease-in-out);
 	&.navbar-default {
-		background-color: rgba(255,255,255,0.5);
+		background-color: rgba(255,255,255, 1);
 		border-bottom:none;
 	}
 }
